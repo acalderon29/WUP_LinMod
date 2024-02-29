@@ -1,7 +1,7 @@
 ---
 title: "linear model from Web"
-author: "Your Name"
-date: "Put semester and year"
+author: "Andrea Calderon"
+date: "Spring 2024"
 output:
    html_document:
          toc: true
@@ -30,6 +30,25 @@ require(knitr)
 data <- read.csv(file="https://onlinestatbook.com/case_studies_rvls/physical_strength/data.txt",sep="",header=TRUE)  
 
 ```
+
+
+# Introduction 
+
+We will produce three equation models to get. 
+  
+1. sim score based on arm strength 
+  
+2. sims score based on grip strength 
+  
+3. sims score based on both arms and grip strength 
+  
+
+for each model we will predict sim for arm=88, grip=94 
+
+# Methods 
+
+we have numerical responses (sim score) and numerical explanatory variables (arm and grip strength)
+so we used numerical~ numerical helper file. 
 
 ## Model 1 SIM~ARMS
 
